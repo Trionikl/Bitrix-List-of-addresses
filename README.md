@@ -10,7 +10,21 @@
 
 Установка:      
 Установить как обычный модуль битрик управление сайтом в разделе  
-"Ваш сайт/bitrix/admin/partner_modules.php?lang=ru"
+"Ваш сайт/bitrix/admin/partner_modules.php?lang=ru"  
+
+
+Подключение:  
+```php
+<?
+/* Подключит лист адресов*/
+$APPLICATION->IncludeComponent(
+    "chamomile:list.addresses",
+    "",
+    array(),
+    false
+);
+?>
+```
 
 Скриншоты 
 
